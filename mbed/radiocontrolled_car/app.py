@@ -1,5 +1,5 @@
 import tkinter as tk
-from pytelemetry.pytelemetry import Pytelemetry
+from pytelemetry import Pytelemetry
 import pytelemetry.transports.serialtransport as transports
 
 pressedKeys = dict()
@@ -63,7 +63,7 @@ def printer(topic,data,opts):
     print(topic,":",data)
 
 options = dict()
-options['port'] = "COM15"
+options['port'] = "COM12"
 options['baudrate'] = 115200
 
 # Open connection
